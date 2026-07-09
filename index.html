@@ -4,23 +4,20 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Support & Rechtliches - APP_NAME</title>
-    <meta name="description" content="Support, Datenschutz und Nutzungsbedingungen fuer APP_NAME." />
+    <meta name="description" content="Support, Datenschutz und Nutzungsbedingungen für APP_NAME." />
     <style>
         :root {
             --bg-top: #faf5ff;
             --bg-bottom: #f0e8ff;
-            --card: rgba(255,255,255,.86);
-            --tab: rgba(255,255,255,.90);
+            --card: rgba(255,255,255,.88);
+            --tab: rgba(255,255,255,.92);
             --text: #0a0a1a;
-            --muted: #6e6e85;
+            --muted: #66657a;
             --primary: #6330db;
             --primary-light: #b894ff;
-            --beginner-bg: #ebdbff;
-            --warmup-bg: #ffe6d6;
-            --vocalise-bg: #dbeaff;
             --border: rgba(99,48,219,.14);
             --shadow: rgba(99,48,219,.14);
-            --max: 920px;
+            --max: 900px;
         }
 
         * { box-sizing: border-box; }
@@ -29,7 +26,7 @@
             margin: 0;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             background:
-                    radial-gradient(circle at top left, rgba(184,148,255,.36), transparent 32%),
+                    radial-gradient(circle at top left, rgba(184,148,255,.34), transparent 32%),
                     linear-gradient(135deg, var(--bg-top), var(--bg-bottom));
             color: var(--text);
             line-height: 1.6;
@@ -40,14 +37,14 @@
         header {
             max-width: var(--max);
             margin: 0 auto;
-            padding: 64px 20px 32px;
+            padding: 58px 20px 30px;
         }
 
         nav {
             display: flex;
-            gap: 14px;
+            gap: 12px;
             flex-wrap: wrap;
-            margin-bottom: 40px;
+            margin-bottom: 36px;
         }
 
         nav a {
@@ -61,13 +58,13 @@
         }
 
         h1 {
-            font-size: clamp(2rem, 6vw, 4rem);
+            font-size: clamp(2rem, 6vw, 3.7rem);
             line-height: 1.05;
             margin: 0 0 16px;
         }
 
         .lead {
-            font-size: 1.15rem;
+            font-size: 1.12rem;
             color: var(--muted);
             max-width: 720px;
             margin: 0;
@@ -89,28 +86,18 @@
             backdrop-filter: blur(16px);
         }
 
-        section:nth-of-type(2) {
-            border-color: rgba(5,71,173,.14);
-        }
-
-        section:nth-of-type(3) {
-            border-color: rgba(219,64,13,.14);
-        }
-
         h2 {
             font-size: 1.65rem;
             margin: 0 0 14px;
         }
 
         h3 {
-            font-size: 1.1rem;
+            font-size: 1.08rem;
             margin: 24px 0 8px;
         }
 
         p, li { color: var(--muted); }
-
         strong { color: var(--text); }
-
         ul { padding-left: 20px; }
 
         .button {
@@ -127,12 +114,10 @@
 
         .note {
             border-left: 3px solid var(--primary);
-            padding-left: 14px;
+            padding: 10px 14px;
             color: var(--muted);
-            background: var(--beginner-bg);
+            background: rgba(99,48,219,.08);
             border-radius: 0 12px 12px 0;
-            padding-top: 10px;
-            padding-bottom: 10px;
         }
 
         footer {
@@ -141,13 +126,6 @@
             padding: 0 20px 48px;
             color: var(--muted);
             font-size: .95rem;
-        }
-
-        code {
-            background: rgba(99,48,219,.10);
-            padding: 2px 6px;
-            border-radius: 6px;
-            color: var(--text);
         }
 
         @media (max-width: 620px) {
@@ -162,11 +140,10 @@
         <a href="#support">Support</a>
         <a href="#privacy">Datenschutz</a>
         <a href="#terms">Nutzungsbedingungen</a>
-        <a href="#contact">Kontakt</a>
     </nav>
 
-    <h1>Support & Rechtliches fuer APP_NAME</h1>
-    <p class="lead">Hier findest du Support-Informationen, unsere Datenschutzhinweise und die Nutzungsbedingungen fuer APP_NAME.</p>
+    <h1>Support & Rechtliches für APP_NAME</h1>
+    <p class="lead">Hier findest du Support, Datenschutzinformationen und die Nutzungsbedingungen für APP_NAME.</p>
 </header>
 
 <main>
@@ -176,95 +153,68 @@
         <p><strong>E-Mail:</strong> <a href="mailto:support@example.com">support@example.com</a></p>
         <a class="button" href="mailto:support@example.com?subject=Support%20APP_NAME">Support kontaktieren</a>
 
-        <h3>Bitte sende uns bei Problemen moeglichst diese Informationen:</h3>
+        <h3>Hilfreiche Angaben bei Problemen</h3>
         <ul>
-            <li>Welches iPhone oder iPad du verwendest</li>
-            <li>Welche iOS-Version installiert ist</li>
-            <li>Welche App-Version du nutzt</li>
-            <li>Was genau passiert ist</li>
-            <li>Falls moeglich: Screenshot oder kurze Beschreibung der Schritte</li>
+            <li>iPhone- oder iPad-Modell</li>
+            <li>iOS-Version</li>
+            <li>App-Version</li>
+            <li>kurze Beschreibung des Problems</li>
+            <li>Screenshot oder Fehlermeldung, falls vorhanden</li>
         </ul>
     </section>
 
     <section id="privacy">
-        <h2>Datenschutzerklaerung</h2>
+        <h2>Datenschutz</h2>
         <p><strong>Stand:</strong> DATUM_EINSETZEN</p>
-        <p>Diese Datenschutzerklaerung erklaert, wie APP_NAME mit personenbezogenen Daten umgeht.</p>
 
-        <h3>Verantwortliche Stelle</h3>
+        <h3>Verantwortlicher</h3>
         <p>
             NAME_ODER_FIRMA<br />
-            ADRESSE_ODER_GESCHAEFTSADRESSE<br />
+            ADRESSE_ODER_GESCHÄFTSADRESSE<br />
             Schweiz<br />
-            E-Mail: <a href="mailto:privacy@example.com">privacy@example.com</a>
+            Datenschutz-Kontakt: <a href="mailto:privacy@example.com">privacy@example.com</a>
         </p>
 
-        <h3>Welche Daten verarbeitet werden koennen</h3>
-        <p>Je nach Nutzung der App koennen folgende Daten verarbeitet werden:</p>
+        <h3>Welche Daten verarbeitet werden können</h3>
+        <p>APP_NAME verarbeitet nur Daten, die für die Nutzung der App, Support, Fehlerbehebung und Käufe erforderlich sind.</p>
         <ul>
-            <li>App-Nutzungsdaten, z.B. Uebungsfortschritt, Einstellungen und Scores</li>
-            <li>Technische Daten, z.B. Geraetetyp, Betriebssystemversion und App-Version</li>
-            <li>Diagnoseinformationen, z.B. Crash-Logs, falls entsprechende Dienste verwendet werden</li>
-            <li>Supportdaten, z.B. E-Mail-Adresse und Inhalt deiner Support-Anfrage</li>
-            <li>Mikrofonzugriff zur Analyse der Tonhoehe waehrend der Nutzung der App</li>
+            <li>Mikrofonzugriff zur Tonhöhenanalyse</li>
+            <li>Übungsfortschritt, Scores und App-Einstellungen</li>
+            <li>technische Daten wie App-Version, Gerätetyp und iOS-Version</li>
+            <li>Support-Nachrichten, wenn du uns kontaktierst</li>
+            <li>Kauf- und Abo-Informationen über Apple</li>
         </ul>
 
-        <h3>Mikrofon</h3>
-        <p>APP_NAME kann Zugriff auf das Mikrofon benoetigen, um Tonhoehe, Stimme oder gesungene Noten waehrend einer Uebung zu analysieren. Der Mikrofonzugriff erfolgt nur, wenn du ihn erlaubst. Passe diesen Abschnitt an, falls Audio aufgenommen, gespeichert oder an Server uebertragen wird.</p>
+        <h3>Mikrofon und Audiodaten</h3>
+        <p>APP_NAME nutzt das Mikrofon, um deine gesungene Tonhöhe zu analysieren und dir Feedback zu geben. Sofern nicht anders angegeben, speichern wir keine vollständigen Audioaufnahmen dauerhaft und geben keine Audioaufnahmen an Dritte weiter.</p>
 
-        <h3>Zweck der Verarbeitung</h3>
-        <p>Die Daten werden verwendet, um die App-Funktionen bereitzustellen, Uebungen auszuwerten, Fortschritt anzuzeigen, technische Probleme zu beheben und Support-Anfragen zu beantworten.</p>
-
-        <h3>Speicherung</h3>
-        <p>Daten werden nur so lange gespeichert, wie es fuer die genannten Zwecke erforderlich ist oder gesetzliche Pflichten bestehen. Passe diesen Abschnitt an, wenn du Cloud-Speicherung, Benutzerkonten oder externe Analyseanbieter nutzt.</p>
+        <h3>Käufe und Abonnements</h3>
+        <p>In-App-Käufe und Abonnements werden über Apple abgewickelt. Wir erhalten keine vollständigen Zahlungsdaten. Für Kaufabwicklung, Kündigung und Rückerstattungen gelten zusätzlich die Bedingungen von Apple.</p>
 
         <h3>Drittanbieter</h3>
-        <p>Falls APP_NAME Dienste von Drittanbietern verwendet, z.B. fuer Analytics, Crash-Reporting, Cloud-Speicherung oder Zahlungsabwicklung, muessen diese hier konkret genannt werden. Kaeufe und Abonnements werden ueber Apple abgewickelt.</p>
-
-        <h3>In-App-Kaeufe und Abonnements</h3>
-        <p>In-App-Kaeufe und Abonnements werden ueber Apple verarbeitet. Zahlungsinformationen werden nicht direkt von APP_NAME verarbeitet. Fuer Kaufabwicklung, Kuendigung und Rueckerstattung gelten zusaetzlich die Bedingungen von Apple.</p>
+        <p>Falls APP_NAME Dienste für Hosting, E-Mail, Analytics, Crash-Reporting oder aehnliche technische Zwecke verwendet, können dabei notwendige technische Daten verarbeitet werden. Diese Angaben muessen an die tatsaechlich verwendeten Dienste angepasst werden.</p>
 
         <h3>Deine Rechte</h3>
-        <p>Je nach anwendbarem Recht kannst du Auskunft, Berichtigung, Loeschung oder Einschraenkung der Verarbeitung deiner personenbezogenen Daten verlangen. Kontaktiere uns dafuer unter <a href="mailto:privacy@example.com">privacy@example.com</a>.</p>
+        <p>Du kannst je nach anwendbarem Recht Auskunft, Berichtigung oder Löschung deiner personenbezogenen Daten verlangen. Kontaktiere uns dafür unter <a href="mailto:privacy@example.com">privacy@example.com</a>.</p>
 
-        <p class="note"><strong>Hinweis:</strong> Diese Vorlage muss an deine tatsaechliche App angepasst werden. Streiche alles, was du nicht nutzt, und ergaenze alle SDKs, Server, Accounts, Analytics- oder Crash-Dienste, die tatsaechlich eingebaut sind.</p>
+        <p class="note"><strong>Wichtig:</strong> Diese Seite muss zur tatsaechlichen App passen. Entferne Angaben, die nicht stimmen, und ergaenze Dienste, SDKs, Server, Accounts, Analytics oder Crash-Reporting, falls du sie verwendest.</p>
     </section>
 
     <section id="terms">
         <h2>Nutzungsbedingungen</h2>
         <p><strong>Stand:</strong> DATUM_EINSETZEN</p>
 
-        <h3>1. Nutzung der App</h3>
-        <p>APP_NAME ist eine App zum Ueben und Verbessern von Gesang, Tonhoehe und musikalischem Training. Die App darf nur im Rahmen der geltenden Gesetze und dieser Nutzungsbedingungen verwendet werden.</p>
+        <p>APP_NAME dient dem Üben von Gesang, Tonhöhe und musikalischer Wahrnehmung. Die App ersetzt keinen Gesangsunterricht, keine medizinische Beratung, keine Stimmtherapie und keine logopädische Behandlung.</p>
 
-        <h3>2. Kein medizinischer Dienst</h3>
-        <p>APP_NAME ist kein medizinisches Produkt, keine Stimmtherapie und kein Ersatz fuer aerztliche, logopaedische oder gesangspaedagogische Beratung. Bei Schmerzen, Stimmproblemen oder gesundheitlichen Beschwerden solltest du professionelle Hilfe in Anspruch nehmen.</p>
+        <p>Wir bemühen uns, hilfreiche Übungen und Auswertungen bereitzustellen. Ein bestimmter Lernerfolg oder eine bestimmte Verbesserung der Stimme wird jedoch nicht garantiert.</p>
 
-        <h3>3. Keine Erfolgsgarantie</h3>
-        <p>Wir bemuehen uns, nuetzliche Uebungen und Auswertungen bereitzustellen. Ein bestimmter Lernerfolg oder eine bestimmte Verbesserung der Stimme wird jedoch nicht garantiert.</p>
+        <p>Falls APP_NAME kostenpflichtige Funktionen, In-App-Käufe oder Abonnements anbietet, werden diese über Apple abgewickelt. Abonnements können sich automatisch verlängern, sofern sie nicht rechtzeitig über die Apple-ID-Einstellungen gekündigt werden.</p>
 
-        <h3>4. In-App-Kaeufe und Abonnements</h3>
-        <p>Falls APP_NAME kostenpflichtige Funktionen, In-App-Kaeufe oder Abonnements anbietet, werden diese ueber Apple abgewickelt. Abonnements koennen sich automatisch verlaengern, sofern sie nicht rechtzeitig ueber die Apple-ID-Einstellungen gekuendigt werden.</p>
+        <p>Die App darf nur im Rahmen der geltenden Gesetze verwendet werden. Inhalte, Designs, Texte, Übungen und Marken duerfen nicht ohne Erlaubnis kopiert oder weiterverwendet werden.</p>
 
-        <h3>5. Verfuegbarkeit</h3>
-        <p>Wir bemuehen uns um einen zuverlaessigen Betrieb der App, koennen aber keine ununterbrochene Verfuegbarkeit garantieren. Funktionen koennen geaendert, erweitert oder entfernt werden.</p>
+        <p>Soweit gesetzlich zulässig, haften wir nicht für indirekte Schäden, Folgeschäden, Datenverluste oder Schäden, die durch unsachgemäße Nutzung der App entstehen.</p>
 
-        <h3>6. Haftung</h3>
-        <p>Soweit gesetzlich zulaessig, haften wir nicht fuer indirekte Schaeden, Folgeschaeden, Datenverluste oder Schaeden, die durch unsachgemaesse Nutzung der App entstehen.</p>
-
-        <h3>7. Aenderungen</h3>
-        <p>Diese Nutzungsbedingungen koennen aktualisiert werden. Die aktuelle Version wird auf dieser Seite veroeffentlicht.</p>
-    </section>
-
-    <section id="contact">
-        <h2>Kontakt</h2>
-        <p>
-            NAME_ODER_FIRMA<br />
-            ADRESSE_ODER_GESCHAEFKTSADRESSE<br />
-            Schweiz<br />
-            Support: <a href="mailto:support@example.com">support@example.com</a><br />
-            Datenschutz: <a href="mailto:privacy@example.com">privacy@example.com</a>
-        </p>
+        <p>Diese Nutzungsbedingungen können aktualisiert werden. Die aktuelle Version wird auf dieser Seite veröffentlicht.</p>
     </section>
 </main>
 
