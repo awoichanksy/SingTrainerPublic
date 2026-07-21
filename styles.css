@@ -58,7 +58,8 @@ a:hover {
 }
 
 a:focus-visible,
-button:focus-visible {
+button:focus-visible,
+summary:focus-visible {
     outline: 3px solid rgba(109, 60, 231, .35);
     outline-offset: 3px;
     border-radius: 6px;
@@ -86,6 +87,8 @@ button:focus-visible {
 }
 
 .site-header {
+    position: relative;
+    z-index: 10;
     padding: 26px 0 0;
 }
 
@@ -124,7 +127,7 @@ button:focus-visible {
 }
 
 .nav-links {
-    display: flex;
+    display: none;
     align-items: center;
     gap: 4px;
     margin: 0;
@@ -148,6 +151,84 @@ button:focus-visible {
 .nav-links a[aria-current="page"] {
     color: var(--primary-dark);
     background: var(--primary-soft);
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.locale-switcher {
+    position: relative;
+}
+
+.locale-switcher summary {
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    color: var(--muted);
+    cursor: pointer;
+    font-size: .93rem;
+    font-weight: 680;
+    list-style: none;
+}
+
+.locale-switcher summary::-webkit-details-marker {
+    display: none;
+}
+
+.locale-switcher summary::after {
+    margin-left: 7px;
+    content: "⌄";
+}
+
+.locale-switcher[open] summary,
+.locale-switcher summary:hover {
+    color: var(--primary-dark);
+    background: var(--primary-soft);
+}
+
+.locale-menu {
+    position: absolute;
+    z-index: 20;
+    top: calc(100% + 8px);
+    right: 0;
+    width: max-content;
+    min-width: 210px;
+    margin: 0;
+    padding: 8px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: var(--surface-solid);
+    box-shadow: var(--shadow);
+    list-style: none;
+}
+
+.locale-menu a {
+    display: block;
+    padding: 9px 10px;
+    border-radius: 9px;
+    color: var(--ink);
+    font-size: .92rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.locale-menu a:hover,
+.locale-menu a[aria-current="page"] {
+    color: var(--primary-dark);
+    background: var(--primary-soft);
+}
+
+.locale-menu small {
+    display: block;
+    margin-top: 1px;
+    color: var(--muted);
+    font-size: .78rem;
+    font-weight: 500;
 }
 
 .hero {
@@ -329,6 +410,7 @@ strong {
     box-shadow: var(--shadow-soft);
 }
 
+.card h2,
 .card h3 {
     margin-top: 0;
 }
@@ -517,20 +599,14 @@ strong {
     }
 
     .nav {
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 5px;
+        align-items: center;
+        flex-direction: row;
         padding: 12px;
     }
 
-    .nav-links {
-        width: 100%;
-        overflow-x: auto;
-        padding-bottom: 2px;
-    }
-
-    .nav-links a {
-        white-space: nowrap;
+    .nav-actions {
+        width: auto;
+        margin-left: auto;
     }
 
     .hero {
