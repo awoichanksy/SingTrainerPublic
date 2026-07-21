@@ -340,38 +340,9 @@ strong {
 }
 
 .logo-stage {
-    position: relative;
-    min-height: 310px;
+    min-height: 260px;
     display: grid;
     place-items: center;
-    overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, .68);
-    border-radius: 34px;
-    background:
-        linear-gradient(145deg, rgba(255, 255, 255, .92), rgba(246, 242, 255, .78)),
-        linear-gradient(145deg, rgba(124, 81, 231, .2), rgba(242, 166, 90, .16));
-    box-shadow: 0 34px 80px rgba(70, 34, 154, .17);
-}
-
-.logo-stage::before,
-.logo-stage::after {
-    position: absolute;
-    content: "";
-    pointer-events: none;
-}
-
-.logo-stage::before {
-    width: 280px;
-    height: 280px;
-    border-radius: 50%;
-    background: rgba(109, 60, 231, .12);
-    filter: blur(3px);
-}
-
-.logo-stage::after {
-    inset: 18px;
-    border: 1px solid rgba(109, 60, 231, .13);
-    border-radius: 24px;
 }
 
 .hero-logo {
