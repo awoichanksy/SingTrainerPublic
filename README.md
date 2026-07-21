@@ -1,6 +1,12 @@
 # Canu Public Pages
 
-Public support, privacy policy and terms page for the iOS app Canu.
+Public support, privacy policy and terms pages for the iOS app Canu.
+
+Entry points:
+
+- `/` German support hub for Switzerland, EU and EEA
+- `/international/` English support hub for the United States and other regions
+- `/cn/` Simplified Chinese support hub for Mainland China
 
 Regional legal URLs:
 

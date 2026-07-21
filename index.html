@@ -3,193 +3,96 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Canu - Support, Datenschutz und Rechtliches</title>
-    <meta name="description" content="Support, Datenschutzerklärung und Nutzungsbedingungen für die iOS-App Canu." />
-    <style>
-        :root {
-            --bg: #f7f4ff;
-            --surface: rgba(255,255,255,.92);
-            --text: #10101f;
-            --muted: #626174;
-            --primary: #6330db;
-            --border: rgba(99,48,219,.16);
-            --max: 920px;
-        }
-
-        * { box-sizing: border-box; }
-
-        body {
-            margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            color: var(--text);
-            background: linear-gradient(135deg, #fbf8ff, var(--bg));
-            line-height: 1.6;
-        }
-
-        a { color: var(--primary); }
-
-        header, main, footer {
-            max-width: var(--max);
-            margin: 0 auto;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-
-        header { padding-top: 52px; padding-bottom: 24px; }
-
-        h1 {
-            margin: 0 0 12px;
-            font-size: clamp(2rem, 6vw, 3.6rem);
-            line-height: 1.05;
-        }
-
-        h2 { margin: 0 0 14px; font-size: 1.65rem; }
-        h3 { margin: 24px 0 8px; font-size: 1.08rem; }
-        p, li { color: var(--muted); }
-        strong { color: var(--text); }
-        ul { padding-left: 20px; }
-
-        .lead {
-            max-width: 760px;
-            margin: 0;
-            color: var(--muted);
-            font-size: 1.12rem;
-        }
-
-        section {
-            margin: 18px 0;
-            padding: 28px;
-            border: 1px solid var(--border);
-            border-radius: 18px;
-            background: var(--surface);
-            box-shadow: 0 10px 26px rgba(42,24,84,.07);
-        }
-
-        .button {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 12px 16px;
-            border-radius: 12px;
-            color: #fff;
-            background: var(--primary);
-            font-weight: 700;
-            text-decoration: none;
-        }
-
-        .note {
-            border-left: 3px solid var(--primary);
-            padding: 10px 14px;
-            border-radius: 0 12px 12px 0;
-            background: rgba(99,48,219,.08);
-        }
-
-        footer {
-            padding-top: 12px;
-            padding-bottom: 48px;
-            color: var(--muted);
-            font-size: .95rem;
-        }
-
-        @media (max-width: 620px) {
-            header { padding-top: 36px; }
-            section { padding: 22px; }
-        }
-    </style>
+    <meta name="theme-color" content="#6d3ce7" />
+    <title>Canu – Support und Rechtliches</title>
+    <meta name="description" content="Offizieller Support, Datenschutzerklärung und Nutzungsbedingungen für die iOS-App Canu." />
+    <link rel="icon" type="image/png" href="assets/canu-logo.png" />
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<header>
-    <h1>Canu</h1>
-    <p class="lead">Support und regionale Rechtsseiten für die iOS-App Canu.</p>
+<a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+<header class="site-header shell">
+    <nav class="nav" aria-label="Hauptnavigation">
+        <a class="brand" href="index.html" aria-label="Canu Startseite"><img class="brand-mark" src="assets/canu-logo.png" alt="" width="34" height="34" />Canu</a>
+        <ul class="nav-links">
+            <li><a href="#support">Support</a></li>
+            <li><a href="#rechtliches">Rechtliches</a></li>
+            <li><a href="international/index.html" lang="en" hreflang="en">English</a></li>
+        </ul>
+    </nav>
 </header>
 
-<main>
-    <section id="support">
-        <h2>Support</h2>
-        <p>Wenn du Fragen oder Probleme mit Canu hast, kontaktiere uns bitte per E-Mail. Produktfeedback ist ebenfalls willkommen.</p>
-        <p><strong>Support:</strong> <a href="mailto:support@canusing.com">support@canusing.com</a></p>
-        <p><strong>Feedback:</strong> <a href="mailto:feedback@canusing.com">feedback@canusing.com</a></p>
-        <a class="button" href="mailto:support@canusing.com?subject=Canu%20Support">Support kontaktieren</a>
-
-        <h3>Hilfreiche Angaben bei Problemen</h3>
-        <ul>
-            <li>iPhone- oder iPad-Modell</li>
-            <li>iOS-Version</li>
-            <li>App-Version</li>
-            <li>kurze Beschreibung des Problems</li>
-            <li>Screenshot oder Fehlermeldung, falls vorhanden</li>
-        </ul>
+<main id="inhalt">
+    <section class="hero shell" aria-labelledby="hero-title">
+        <div>
+            <p class="eyebrow">Singen. Hören. Wachsen.</p>
+            <h1 id="hero-title">Deine Stimme verdient gutes Training.</h1>
+            <p class="lead">Canu unterstützt dich beim Üben von Tonhöhe und musikalischem Gehör. Hier findest du schnelle Hilfe und alle rechtlichen Informationen für die Schweiz und die EU.</p>
+            <div class="actions">
+                <a class="button" href="mailto:support@canusing.com?subject=Canu%20Support">Support kontaktieren</a>
+                <a class="button secondary" href="#rechtliches">Zu den Dokumenten</a>
+            </div>
+        </div>
+        <div class="logo-stage" aria-hidden="true">
+            <img class="hero-logo" src="assets/canu-logo.png" alt="" width="240" height="240" />
+        </div>
     </section>
 
-    <section id="regions">
-        <h2>Regionale Rechtsseiten</h2>
-        <p>Die App öffnet je nach App-Store-Region direkt die passende Datenschutzerklärung und die passenden Nutzungsbedingungen. Dafür werden stabile Pfade verwendet, keine Sprach- oder Regionsauswahl auf dieser Website.</p>
-        <ul>
-            <li>Schweiz: <a href="ch/datenschutz/index.html">Datenschutz</a> · <a href="ch/nutzungsbedingungen/index.html">Nutzungsbedingungen</a></li>
-            <li>EU/EWR: <a href="eu/datenschutz/index.html">Datenschutz</a> · <a href="eu/nutzungsbedingungen/index.html">Nutzungsbedingungen</a></li>
-            <li>United States: <a href="us/privacy/index.html">Privacy Policy</a> · <a href="us/terms/index.html">Terms of Use</a></li>
-            <li>中国大陆: <a href="cn/privacy/index.html">隐私政策</a> · <a href="cn/terms/index.html">使用条款</a></li>
-            <li>International: <a href="international/privacy/index.html">Privacy Policy</a> · <a href="international/terms/index.html">Terms of Use</a></li>
-        </ul>
+    <section class="section-block shell" id="support" aria-labelledby="support-title">
+        <div class="section-intro">
+            <p class="eyebrow">Persönlich für dich da</p>
+            <h2 id="support-title">Schnelle Hilfe für Canu</h2>
+            <p>Beschreibe kurz dein Anliegen. Wir melden uns so schnell wie möglich und verwenden deine Angaben ausschließlich zur Bearbeitung deiner Anfrage.</p>
+        </div>
+        <div class="card-grid">
+            <article class="card">
+                <h3>Technische Hilfe</h3>
+                <p>Bei Problemen mit Audio, Übungen, Käufen oder Einstellungen.</p>
+                <a class="card-link" href="mailto:support@canusing.com?subject=Canu%20Support">support@canusing.com</a>
+            </article>
+            <article class="card">
+                <h3>Ideen und Feedback</h3>
+                <p>Dein Feedback hilft uns, Canu Schritt für Schritt besser zu machen.</p>
+                <a class="card-link" href="mailto:feedback@canusing.com?subject=Canu%20Feedback">feedback@canusing.com</a>
+            </article>
+            <article class="card">
+                <h3>Damit wir helfen können</h3>
+                <p>Nenne bitte Gerät, iOS-Version, App-Version und eine kurze Fehlerbeschreibung. Ein Screenshot ist oft hilfreich.</p>
+            </article>
+        </div>
     </section>
 
-    <section id="privacy">
-        <h2>Datenschutzerklärung</h2>
-        <p class="note">Diese Kurzfassung bleibt als Einstieg erhalten. Die App verlinkt die regionalen Seiten oben.</p>
-        <p><strong>Stand:</strong> 21. Juli 2026</p>
-
-        <h3>Verantwortlicher</h3>
-        <p>
-            Aleksander Woichansky<br />
-            Schweiz<br />
-            Datenschutz-Kontakt: <a href="mailto:support@canusing.com">support@canusing.com</a>
-        </p>
-
-        <h3>Kurzfassung</h3>
-        <p>Canu verarbeitet Übungsdaten lokal auf deinem Gerät. Die App betreibt kein eigenes Backend und verwendet kein Analytics- oder Crash-Reporting-SDK. Mikrofon-Audio und gespeicherte Übungsaufnahmen werden von der App nicht automatisch an uns übertragen.</p>
-
-        <h3>Mikrofon und Audiodaten</h3>
-        <p>Canu nutzt das Mikrofon, um die gesungene Tonhöhe auf deinem Gerät zu analysieren. Wenn du die optionale Aufnahme für eine Übung aktivierst, werden Stimme und Klavier lokal in der App gespeichert. Du kannst gespeicherte Aufnahmen in der App löschen. Eine Aufnahme wird nur weitergegeben, wenn du selbst die Teilen-Funktion verwendest und ein Ziel im iOS-Share-Sheet auswählst.</p>
-
-        <h3>Lokal gespeicherte Daten</h3>
-        <p>Die App kann Übungsfortschritt, Scores, gespeicherte Aufnahmen, Stimmprofil, Sprache, Audio-Sync-Einstellungen, Erinnerungszeiten und weitere App-Einstellungen lokal auf deinem Gerät speichern. Beim Löschen der App werden diese lokalen App-Daten entfernt; Geräte- oder iCloud-Backups können Kopien enthalten, die du bzw. Apple verwaltest.</p>
-
-        <h3>Benachrichtigungen</h3>
-        <p>Erinnerungen werden lokal über iOS geplant. Canu betreibt dafür keinen eigenen Push-Server.</p>
-
-        <h3>Käufe und Abonnements</h3>
-        <p>In-App-Käufe und Abonnements werden über Apple StoreKit abgewickelt. Wir erhalten keine vollständigen Zahlungsdaten. Abrechnung, Kündigung, Erstattungen und die Verwaltung von Abonnements erfolgen über Apple.</p>
-
-        <h3>Support-Kommunikation</h3>
-        <p>Wenn du uns per E-Mail kontaktierst, verarbeiten wir die von dir gesendeten Kontaktdaten, technischen Angaben, Screenshots und Nachrichten ausschließlich zur Bearbeitung deiner Anfrage. Diese Kommunikation läuft über deinen und unseren E-Mail-Anbieter.</p>
-
-        <h3>Hosting dieser Seite</h3>
-        <p>Diese öffentliche Support- und Datenschutzseite wird über GitHub Pages bereitgestellt. Beim Aufruf der Seite kann GitHub technisch notwendige Zugriffsdaten verarbeiten, etwa IP-Adresse, Browser-Informationen und Abrufzeitpunkt.</p>
-
-        <h3>Deine Rechte</h3>
-        <p>Je nach anwendbarem Recht kannst du Auskunft, Berichtigung oder Löschung personenbezogener Daten verlangen. Kontaktiere uns dafür unter <a href="mailto:support@canusing.com">support@canusing.com</a>.</p>
-    </section>
-
-    <section id="terms">
-        <h2>Nutzungsbedingungen</h2>
-        <p class="note">Diese Kurzfassung bleibt als Einstieg erhalten. Die regionalen Seiten oben sind die stabilen URLs für App und App Store Connect.</p>
-        <p><strong>Stand:</strong> 21. Juli 2026</p>
-
-        <p>Canu dient dem persönlichen Stimmtraining, dem Üben von Tonhöhe und musikalischer Wahrnehmung. Die App ersetzt keinen Gesangsunterricht, keine medizinische Beratung, keine Stimmtherapie und keine logopädische Behandlung.</p>
-
-        <p>Ein bestimmter Lernerfolg oder eine bestimmte Verbesserung der Stimme wird nicht garantiert. Beende das Singen bei Schmerzen, anhaltender Heiserkeit, Schwindel oder ungewöhnlicher Anstrengung und hole bei anhaltenden Beschwerden fachlichen Rat ein.</p>
-
-        <p>Kostenpflichtige Funktionen, In-App-Käufe und Abonnements werden über Apple abgewickelt. Abonnements können sich automatisch verlängern, sofern sie nicht rechtzeitig über die Apple-ID-Einstellungen gekündigt werden.</p>
-
-        <p>Die App darf nur im Rahmen geltender Gesetze und für dein eigenes, nicht gewerbliches Training verwendet werden. Inhalte, Designs, Texte, Übungen und Marken dürfen nicht ohne Erlaubnis kopiert, weitergegeben, verkauft oder missbräuchlich verwendet werden.</p>
-
-        <p>Soweit gesetzlich zulässig, haften wir nicht für indirekte Schäden, Folgeschäden, Datenverluste oder Schäden, die durch unsachgemäße Nutzung der App entstehen. Zwingende Verbraucherrechte bleiben unberührt.</p>
-
-        <p>Diese Nutzungsbedingungen können aktualisiert werden. Die aktuelle Version wird auf dieser Seite veröffentlicht.</p>
+    <section class="section-block shell" id="rechtliches" aria-labelledby="legal-title">
+        <div class="section-intro">
+            <p class="eyebrow">Transparent und verständlich</p>
+            <h2 id="legal-title">Rechtliche Dokumente</h2>
+            <p>Wähle die für deinen App-Store-Standort passende Fassung. Auf diesen deutschsprachigen Seiten erscheinen ausschließlich deutsche Inhalte.</p>
+        </div>
+        <div class="card-grid">
+            <article class="card">
+                <h3>Schweiz</h3>
+                <p>Informationen nach schweizerischem Recht.</p>
+                <p><a class="card-link" href="ch/datenschutz/index.html">Datenschutzerklärung</a><br /><a class="card-link" href="ch/nutzungsbedingungen/index.html">Nutzungsbedingungen</a></p>
+            </article>
+            <article class="card">
+                <h3>Europäische Union und EWR</h3>
+                <p>Informationen für die EU und den Europäischen Wirtschaftsraum.</p>
+                <p><a class="card-link" href="eu/datenschutz/index.html">Datenschutzerklärung</a><br /><a class="card-link" href="eu/nutzungsbedingungen/index.html">Nutzungsbedingungen</a></p>
+            </article>
+            <article class="card">
+                <h3>Andere Regionen</h3>
+                <p>Die englischsprachige Übersicht führt zu den Dokumenten für weitere Regionen.</p>
+                <a class="card-link" href="international/index.html" lang="en" hreflang="en">English support</a>
+            </article>
+        </div>
     </section>
 </main>
 
-<footer>
-    <p>&copy; 2026 Aleksander Woichansky. Alle Rechte vorbehalten.</p>
+<footer class="site-footer">
+    <div class="footer-inner shell">
+        <p>© 2026 Aleksander Woichansky. Alle Rechte vorbehalten.</p>
+        <div class="footer-links"><a href="mailto:support@canusing.com">Kontakt</a><a href="ch/datenschutz/index.html">Datenschutz</a><a href="ch/nutzungsbedingungen/index.html">Nutzungsbedingungen</a></div>
+    </div>
 </footer>
 </body>
 </html>
