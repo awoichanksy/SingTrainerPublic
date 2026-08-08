@@ -15,6 +15,7 @@ Regional legal URLs:
 - `/us/privacy/` and `/us/terms/`
 - `/cn/privacy/` and `/cn/terms/`
 - `/international/privacy/` and `/international/terms/`
+- `/de/copyright/`, `/international/copyright/` and `/cn/copyright/`
 
 The app links directly to the correct regional path. The website does not use
 language parameters or language-selection buttons.
