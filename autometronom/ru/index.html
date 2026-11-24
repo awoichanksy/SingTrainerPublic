@@ -4,20 +4,149 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex, nofollow" />
-    <meta name="theme-color" content="#6d3ce7" />
-    <title>AutoMetronom – Поддержка</title>
-    <meta name="description" content="Поддержка AutoMetronom" />
+    <meta name="theme-color" content="#6330db" />
+    <title>AutoMetronom – Метроном, который сначала слушает</title>
+    <meta name="description" content="AutoMetronom определяет темп, размер и первую долю через микрофон и запускает подходящий метроном. Поддержка и правовые тексты приложения для iOS." />
     <link rel="icon" type="image/png" href="../assets/autometronom-icon.png" />
-    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../../styles.css?v=2" />
+    <script src="../../assets/store.js" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#content">Перейти к содержимому</a>
-<header class="site-header shell"><nav class="nav" aria-label="Главная навигация"><a class="brand" href="index.html" aria-label="Главная AutoMetronom"><img class="brand-mark" src="../assets/autometronom-icon.png" alt="" width="34" height="34" />AutoMetronom</a><div class="nav-actions"><ul class="nav-links"><li><a href="#support">Поддержка</a></li></ul><details class="locale-switcher"><summary>Русский</summary><ul class="locale-menu"><li><a href="../de/index.html" lang="de" hreflang="de">Deutsch</a></li><li><a href="../en/index.html" lang="en" hreflang="en">English</a></li><li><a href="../es/index.html" lang="es" hreflang="es">Español</a></li><li><a href="../fr/index.html" lang="fr" hreflang="fr">Français</a></li><li><a href="../it/index.html" lang="it" hreflang="it">Italiano</a></li><li><a href="../pt/index.html" lang="pt" hreflang="pt">Português</a></li><li><a aria-current="page" href="../ru/index.html" lang="ru" hreflang="ru">Русский</a></li></ul></details></div></nav></header>
+<div class="am-top">
+    <header class="site-header shell">
+        <nav class="nav" aria-label="AutoMetronom">
+            <a class="brand" href="index.html"><img src="../assets/autometronom-icon.png" alt="" width="44" height="44" />AutoMetronom</a>
+            <div class="nav-actions">
+                <ul class="nav-links">
+                    <li><a href="#how">Как это работает</a></li>
+                    <li><a href="#support">Поддержка</a></li>
+                    <li><a href="#legal">Правовая информация</a></li>
+                </ul>
+                <details class="locale-switcher"><summary>Русский</summary><ul class="locale-menu"><li><a href="../de/index.html" lang="de" hreflang="de">Deutsch</a></li><li><a href="../en/index.html" lang="en" hreflang="en">English</a></li><li><a href="../es/index.html" lang="es" hreflang="es">Español</a></li><li><a href="../fr/index.html" lang="fr" hreflang="fr">Français</a></li><li><a href="../it/index.html" lang="it" hreflang="it">Italiano</a></li><li><a href="../nl/index.html" lang="nl" hreflang="nl">Nederlands</a></li><li><a href="../pt/index.html" lang="pt" hreflang="pt">Português</a></li><li><a aria-current="page" href="../ru/index.html" lang="ru" hreflang="ru">Русский</a></li><li><a href="../sv/index.html" lang="sv" hreflang="sv">Svenska</a></li></ul></details>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero shell" aria-labelledby="hero-title">
+        <div class="hero-copy">
+            <h1 class="am-title" id="hero-title">Метроном, который сначала слушает.</h1>
+            <p class="lead">AutoMetronom слушает музыку через микрофон iPhone и определяет темп, размер и положение первой доли. Затем он сам запускает метроном, который точно совпадает с музыкой.</p>
+            <div class="cta-row">
+                <span class="button is-soon" data-am-store="Загрузить в App Store">Скоро в App Store</span>
+                <div class="beats" role="img" aria-label="111 BPM · 4/4">
+                    <span class="beat is-one">1</span><span class="beat">2</span><span class="beat">3</span><span class="beat">4</span>
+                    <span class="beats-label">111 BPM · 4/4</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-art">
+            <div class="stage" aria-hidden="true">
+                <svg class="stage-wave" viewBox="0 0 540 540">
+                    <path d="M-20 330C70 250 130 250 220 330S380 430 470 350S560 300 580 300" fill="none" stroke="#fff" stroke-width="3" />
+                    <circle cx="-20" cy="330" r="13" fill="#7c4df0" />
+                    <circle cx="560" cy="304" r="13" fill="#7c4df0" />
+                    <circle cx="220" cy="330" r="6" fill="#faf5ff" stroke="#d5c6f7" stroke-width="2" />
+                    <circle cx="400" cy="398" r="6" fill="#faf5ff" stroke="#d5c6f7" stroke-width="2" />
+                </svg>
+                <div class="float float-wave"><span class="pill-auto">Auto</span><div class="bars"><span style="height: 16px; animation: none"></span><span style="height: 34px; animation-delay: 0s"></span><span style="height: 58px; animation-delay: 0.1s"></span><span style="height: 80px; animation-delay: 0.2s"></span><span style="height: 46px; animation-delay: 0.3s"></span><span style="height: 66px; animation-delay: 0.4s"></span><span style="height: 30px; animation-delay: 0.5s"></span><span style="height: 72px; animation-delay: 0.6s"></span><span style="height: 52px; animation-delay: 0.7s"></span><span style="height: 76px; animation-delay: 0.8s"></span><span style="height: 40px; animation-delay: 0.9s"></span><span style="height: 60px; animation-delay: 1s"></span><span style="height: 26px; animation: none"></span><span style="height: 14px; animation: none"></span></div></div>
+                <div class="float float-song">
+                    <span class="song-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#6330db" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l10-2v13" /><circle cx="6.5" cy="18" r="2.5" fill="#6330db" /><circle cx="16.5" cy="16" r="2.5" fill="#6330db" /></svg></span>
+                    <span class="song-text"><strong>Твоя музыка</strong>Композиция распознана<em>Последнее: 111 BPM · 4/4</em></span>
+                </div>
+                <div class="float float-tempo">Tempo<span><strong>111</strong>BPM</span></div>
+            </div>
+        </div>
+    </section>
+</div>
+
 <main id="content">
-    <section class="hero shell" aria-labelledby="hero-title"><div><p class="eyebrow">Слушать. Совпасть. Играть.</p><h1 id="hero-title">Метроном, который следует за музыкой.</h1><p class="lead">AutoMetronom слушает через микрофон, определяет темп, размер и первую долю и подстраивает ровный клик под песню.</p></div><div class="logo-stage" aria-hidden="true"><img class="hero-logo" src="../assets/autometronom-icon.png" alt="" width="240" height="240" /></div></section>
-    <section class="section-block shell" id="support" aria-labelledby="support-title"><div class="section-intro"><p class="eyebrow">Мы рядом, когда нужна помощь</p><h2 id="support-title">Поддержка AutoMetronom</h2><p>Кратко опишите, чем вам помочь. Мы используем ваши данные только для ответа на обращение.</p></div><div class="card-grid"><article class="card"><h3>Техническая поддержка</h3><p>Помощь с прослушиванием, синхронизацией, распознаванием песен и настройками.</p><a class="card-link" href="mailto:support@canusing.com?subject=AutoMetronom%20Support">support@canusing.com</a></article><article class="card"><h3>Что указать</h3><p>Укажите устройство, версию iOS и приложения, сыгранную песню и краткое описание. Скриншот часто помогает.</p></article><article class="card"><h3>Идеи и отзывы</h3><p>Присылайте идеи, пожелания и отзывы.</p><a class="card-link" href="mailto:support@canusing.com?subject=AutoMetronom%20Feedback">support@canusing.com</a></article></div></section>
-    <section class="section-block shell" id="legal" aria-labelledby="legal-title"><div class="section-intro"><h2 id="legal-title">Юридические тексты</h2></div><div class="card-grid"><article class="card"><h3>Швейцария</h3><p><a class="card-link" href="privacy/index.html#switzerland">Политика конфиденциальности</a><br /><a class="card-link" href="../ch/nutzungsbedingungen/index.html">Условия использования</a><br /><a class="card-link" href="copyright/index.html">Авторские права</a></p></article><article class="card"><h3>Европейский союз и ЕЭЗ</h3><p><a class="card-link" href="privacy/index.html#europe">Политика конфиденциальности</a><br /><a class="card-link" href="../eu/nutzungsbedingungen/index.html">Условия использования</a><br /><a class="card-link" href="copyright/index.html">Авторские права</a></p></article><article class="card"><h3>США</h3><p><a class="card-link" href="privacy/index.html#united-states">Политика конфиденциальности</a><br /><a class="card-link" href="../us/terms/index.html">Условия использования</a><br /><a class="card-link" href="copyright/index.html">Авторские права</a></p></article><article class="card"><h3>Материковый Китай</h3><p><a class="card-link" href="privacy/index.html#china">Политика конфиденциальности</a><br /><a class="card-link" href="../cn/terms/index.html">Условия использования</a><br /><a class="card-link" href="copyright/index.html">Авторские права</a></p></article><article class="card"><h3>Другие регионы</h3><p><a class="card-link" href="privacy/index.html#other-regions">Политика конфиденциальности</a><br /><a class="card-link" href="../international/terms/index.html">Условия использования</a><br /><a class="card-link" href="copyright/index.html">Авторские права</a></p></article></div></section>
+    <section class="shell section stack" id="how" aria-labelledby="steps-title">
+        <h2 class="h2" id="steps-title">Как это работает</h2>
+        <ol class="steps">
+            <li><span class="step-no" aria-hidden="true">1</span><h3>Включи музыку</h3><p>Из колонки, от группы или из другого приложения.</p></li>
+            <li><span class="step-no" aria-hidden="true">2</span><h3>Дай послушать</h3><p>Примерно через 6–10 секунд темп, размер и первая доля определены. Уже знакомые приложению песни узнаются примерно за 5 секунд, даже без интернета.</p></li>
+            <li><span class="step-no" aria-hidden="true">3</span><h3>Играй вместе</h3><p>Метроном щёлкает в такт, первая доля выше и громче. При желании — восьмыми.</p></li>
+        </ol>
+    </section>
+
+    <section class="band" aria-labelledby="features-title">
+        <div class="shell section stack">
+            <h2 class="h2 narrow" id="features-title">Держится за музыку, пока она звучит.</h2>
+            <div class="facts">
+                <div class="fact"><h3>Фиксированный темп</h3><p>После захвата темп и первая доля остаются на месте. Игра, пение или хлопки не сбивают метроном.</p></div>
+                <div class="fact"><h3>Свободный темп</h3><p>Для старых и концертных записей с плавающим темпом. Метроном следует за музыкой.</p></div>
+                <div class="fact"><h3>Узнавание без сети</h3><p>Знакомые песни в следующий раз сразу стартуют с верной долей, даже при плавающем темпе.</p></div>
+                <div class="fact"><h3>Пауза и вступление</h3><p>На паузе метроном молчит, но продолжает следить за музыкой. Вступление возвращает его точно в такт.</p></div>
+                <div class="fact"><h3>Для наушников</h3><p>Опережение щелчка против задержки Bluetooth. Щелчки можно вывести через динамик iPhone.</p></div>
+                <div class="fact"><h3>Вручную</h3><p>Обычный метроном: 30–300 BPM, размеры до 16/16 и тап-темп. Работает и без микрофона.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="shell section stack" aria-labelledby="shots-title">
+        <div class="split-head">
+            <h2 class="h2 narrow" id="shots-title">Знай, когда вступать.</h2>
+            <p>Акцент на первой доле, четверти или восьмые. Каждую долю можно акцентировать, оставить обычной или заглушить.</p>
+        </div>
+        <div class="shots">
+            <img src="../../assets/shots/am-ru-1.jpg" alt="Снимок экрана AutoMetronom 1" width="598" height="1300" loading="lazy" />
+            <img src="../../assets/shots/am-ru-2.jpg" alt="Снимок экрана AutoMetronom 2" width="598" height="1300" loading="lazy" />
+            <img src="../../assets/shots/am-ru-3.jpg" alt="Снимок экрана AutoMetronom 3" width="598" height="1300" loading="lazy" />
+            <img src="../../assets/shots/am-ru-4.jpg" alt="Снимок экрана AutoMetronom 4" width="598" height="1300" loading="lazy" />
+        </div>
+    </section>
+
+    <section class="shell" aria-labelledby="privacy-title" style="padding-bottom: 96px">
+        <div class="privacy">
+            <div class="privacy-copy">
+                <h2 class="h2" id="privacy-title">Без аккаунта. Без рекламы. Без отслеживания.</h2>
+                <a href="privacy/index.html">Читать политику конфиденциальности</a>
+            </div>
+            <dl><div><dt>Микрофон</dt><dd>Звук анализируется на устройстве. Записи не сохраняются и не отправляются.</dd></div><div><dt>Распознавание песен</dt><dd>В Shazam (Apple) отправляется аудиоотпечаток, а не звук.</dd></div><div><dt>Данные о темпе</dt><dd>Для распознанной песни в GetSongBPM отправляются название и исполнитель.</dd></div></dl>
+        </div>
+    </section>
+
+    <section class="band" id="support" aria-labelledby="support-title">
+        <div class="shell section two-col">
+            <div>
+                <h2 class="h2" id="support-title">Поддержка AutoMetronom</h2>
+                <p>Кратко опиши вопрос. Мы ответим как можно скорее и используем твои данные только для обработки обращения.</p>
+            </div>
+            <div>
+                <a class="mail-card" href="mailto:support@canusing.com?subject=AutoMetronom%20Support"><strong>Помощь, идеи и отзывы</strong>Проблемы с прослушиванием, захватом, распознаванием песен или настройками. Пожелания и предложения тоже приветствуются.<em>support@canusing.com</em></a>
+                <p class="hint">Чтобы мы могли помочь: укажи устройство, версию iOS, версию приложения, звучавшую песню и краткое описание. Снимок экрана часто помогает.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="shell section legal" id="legal" aria-labelledby="legal-title">
+        <div class="legal-intro">
+            <h2 class="h2-small" id="legal-title">Правовые тексты</h2>
+            <p>Выбери регион, в котором ты пользуешься AutoMetronom.</p>
+        </div>
+        <ul class="legal-list">
+            <li><strong>Швейцария</strong><span><a href="privacy/index.html#switzerland">Политика конфиденциальности</a><a href="../ch/nutzungsbedingungen/index.html">Условия использования</a><a href="copyright/index.html">Авторские права</a></span></li>
+            <li><strong>Европейский союз и ЕЭЗ</strong><span><a href="privacy/index.html#europe">Политика конфиденциальности</a><a href="../eu/nutzungsbedingungen/index.html">Условия использования</a><a href="copyright/index.html">Авторские права</a></span></li>
+            <li><strong>США</strong><span><a href="privacy/index.html#united-states">Политика конфиденциальности</a><a href="../us/terms/index.html">Условия использования</a><a href="copyright/index.html">Авторские права</a></span></li>
+            <li><strong>Материковый Китай</strong><span><a href="privacy/index.html#china">Политика конфиденциальности</a><a href="../cn/terms/index.html">Условия использования</a><a href="copyright/index.html">Авторские права</a></span></li>
+            <li><strong>Другие регионы</strong><span><a href="privacy/index.html#other-regions">Политика конфиденциальности</a><a href="../international/terms/index.html">Условия использования</a><a href="copyright/index.html">Авторские права</a></span></li>
+        </ul>
+    </section>
 </main>
-<footer class="site-footer"><div class="footer-inner shell"><p>© 2026 Aleksander Woichansky. Все права защищены.</p><div class="footer-links"><a href="mailto:support@canusing.com">Контакты</a><a href="#legal">Юридические тексты</a></div></div></footer>
+
+<footer class="site-footer">
+    <div class="footer-inner shell">
+        <div class="footer-main">
+            <a class="brand" href="index.html"><img src="../assets/autometronom-icon.png" alt="" width="40" height="40" />AutoMetronom</a>
+            <p>© 2026 Aleksander Woichansky. Все права защищены.</p>
+            <p>Данные о темпе: <a href="https://getsongbpm.com">GetSongBPM.com</a> · Распознавание песен: Shazam (Apple)</p>
+            <div class="footer-links"><a href="mailto:support@canusing.com">Контакт</a><a href="#legal">Правовые тексты</a></div>
+        </div>
+        <a class="sibling" href="../../ru/index.html"><img src="../../assets/canu-logo.png" alt="" width="64" height="64" /><span><small>Ещё от нас</small><strong>Canu</strong>Тренируй голос. Пой лучше.</span></a>
+    </div>
+</footer>
 </body>
 </html>

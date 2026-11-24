@@ -3,45 +3,157 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#6d3ce7" />
-    <title>Canu – Support</title>
-    <meta name="description" content="Official support for the Canu iOS app." />
+    <meta name="theme-color" content="#6330db" />
+    <title>Canu – Learn to sing</title>
+    <meta name="description" content="Canu is your personal vocal coach for pitch, vocal range and singing exercises. Support and legal texts for the iOS app." />
     <link rel="icon" type="image/png" href="../assets/canu-logo.png" />
-    <link rel="stylesheet" href="../styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../styles.css?v=2" />
+    <script src="../assets/store.js" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#content">Skip to content</a>
 <header class="site-header shell">
-    <nav class="nav" aria-label="Main navigation">
-        <a class="brand" href="index.html" aria-label="Canu home"><img class="brand-mark" src="../assets/canu-logo.png" alt="" width="34" height="34" />Canu</a>
-        <div class="nav-actions"><ul class="nav-links"><li><a href="#support">Support</a></li></ul><details class="locale-switcher"><summary>English</summary><ul class="locale-menu"><li><a href="../de/index.html" lang="de">Deutsch</a></li><li><a href="../en/index.html" lang="en">English</a></li><li><a href="../es/index.html" lang="es">Español</a></li><li><a href="../fr/index.html" lang="fr">Français</a></li><li><a href="../it/index.html" lang="it">Italiano</a></li><li><a href="../pt/index.html" lang="pt">Português</a></li><li><a href="../ru/index.html" lang="ru">Русский</a></li></ul></details></div>
+    <nav class="nav" aria-label="Canu">
+        <a class="brand" href="index.html"><img src="../assets/canu-logo.png" alt="" width="44" height="44" />Canu</a>
+        <div class="nav-actions">
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#support">Support</a></li>
+                <li><a href="#legal">Legal</a></li>
+            </ul>
+            <details class="locale-switcher"><summary>English</summary><ul class="locale-menu"><li><a href="../de/index.html" lang="de" hreflang="de">Deutsch</a></li><li><a aria-current="page" href="../en/index.html" lang="en" hreflang="en">English</a></li><li><a href="../es/index.html" lang="es" hreflang="es">Español</a></li><li><a href="../fr/index.html" lang="fr" hreflang="fr">Français</a></li><li><a href="../it/index.html" lang="it" hreflang="it">Italiano</a></li><li><a href="../nl/index.html" lang="nl" hreflang="nl">Nederlands</a></li><li><a href="../pt/index.html" lang="pt" hreflang="pt">Português</a></li><li><a href="../ru/index.html" lang="ru" hreflang="ru">Русский</a></li><li><a href="../sv/index.html" lang="sv" hreflang="sv">Svenska</a></li></ul></details>
+            <a class="button-dark" href="https://apps.apple.com/us/app/canu-sing/id6797062240">Download on the App Store</a>
+        </div>
     </nav>
 </header>
+
 <main id="content">
     <section class="hero shell" aria-labelledby="hero-title">
-        <div>
-            <p class="eyebrow">Sing. Listen. Grow.</p>
-            <h1 id="hero-title">Train your voice with purpose.</h1>
-            <p class="lead">Canu helps you practice pitch and musical listening.</p>
-            <div class="actions"><a class="button" href="https://apps.apple.com/us/app/canu-sing/id6797062240">Download on the App Store</a></div>
+        <div class="hero-copy">
+            <h1 id="hero-title"><span class="canu-title-a">Learn to sing.</span><span class="canu-title-b">Train your voice.</span></h1>
+            <p class="lead">Canu is your personal vocal coach. Learn to hit notes with confidence, develop your voice and sing more freely. Step by step.</p>
+            <div class="cta-row">
+                <a class="button" href="https://apps.apple.com/us/app/canu-sing/id6797062240">Download on the App Store</a>
+                <span class="cta-note">For iPhone.</span>
+            </div>
         </div>
-        <div class="logo-stage" aria-hidden="true"><img class="hero-logo" src="../assets/canu-logo.png" alt="" width="240" height="240" /></div>
+        <div class="hero-art">
+            <svg class="pitch" role="img" aria-label="Pitch line rising across the notes sol, ti and re" viewBox="0 0 560 560">
+                <defs>
+                    <linearGradient id="chip" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8e63f5" /><stop offset="1" stop-color="#6330db" /></linearGradient>
+                    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="12" /></filter>
+                </defs>
+                <path d="M0 40H560M0 96H560M0 152H560M0 208H560M0 264H560M0 320H560M0 376H560M0 432H560M0 488H560M0 544H560" stroke="#e6dafc" stroke-width="1.5" />
+                <path d="M410 0V560" stroke="#8e63f5" stroke-width="3" />
+                <path d="M-10 488H110C160 488 160 320 210 320H300C350 320 350 152 400 152H410" fill="none" stroke="#1fc775" stroke-width="26" stroke-linecap="round" opacity=".4" filter="url(#glow)" />
+                <path d="M-10 488H110C160 488 160 320 210 320H300C350 320 350 152 400 152H410" fill="none" stroke="#1fc775" stroke-width="10" stroke-linecap="round" />
+                <g font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="22" text-anchor="middle">
+                    <rect x="24" y="458" width="84" height="60" rx="18" fill="url(#chip)" /><text x="66" y="496" fill="#fff">sol</text>
+                    <rect x="212" y="290" width="84" height="60" rx="18" fill="url(#chip)" /><text x="254" y="328" fill="#fff">ti</text>
+                    <rect x="368" y="122" width="84" height="60" rx="18" fill="url(#chip)" /><text x="410" y="160" fill="#fff">re</text>
+                    <rect x="470" y="122" width="84" height="60" rx="18" fill="#eadfff" /><text x="512" y="160" fill="#6330db">mi</text>
+                </g>
+                <circle cx="410" cy="152" r="9" fill="#f2a65a" stroke="#fff" stroke-width="3" />
+            </svg>
+        </div>
     </section>
-    <section class="section-block shell" id="support" aria-labelledby="support-title">
-        <div class="section-intro"><p class="eyebrow">Here when you need us</p><h2 id="support-title">Support for Canu</h2><p>Tell us briefly what you need help with. We use your details only to respond to your request.</p></div>
-        <div class="card-grid">
-            <article class="card"><h3>Technical support</h3><p>Help with audio, exercises, purchases, or settings.</p><a class="card-link" href="mailto:support@canusing.com?subject=Canu%20Support">support@canusing.com</a></article>
-            <article class="card"><h3>Useful details</h3><p>Please include your device, iOS version, app version, and a short description. A screenshot often helps.</p></article>
-            <article class="card"><h3>Ideas and feedback</h3><p>Send us your ideas, requests, or feedback.</p><a class="card-link" href="mailto:feedback@canusing.com?subject=Canu%20Feedback">feedback@canusing.com</a></article>
+
+    <section class="band" id="features" aria-labelledby="features-title">
+        <div class="shell section stack">
+            <h2 class="h2 narrow" id="features-title">Canu hears where you get stuck.</h2>
+            <div class="stairs">
+                <article class="stair"><span class="chip" aria-hidden="true">do</span><h3>Focus practice</h3><p>Canu picks out the spot where you get stuck, gives you lead-in notes and then lets you sing the full exercise again.</p></article>
+                <article class="stair"><span class="chip" aria-hidden="true">re</span><h3>Pitch in real time</h3><p>See which note you are singing and how securely you hit it.</p></article>
+                <article class="stair"><span class="chip" aria-hidden="true">mi</span><h3>Your voice as the starting point</h3><p>Measure your vocal range live and discover your voice type.</p></article>
+                <article class="stair"><span class="chip" aria-hidden="true">fa</span><h3>Daily sessions</h3><p>Start with two warm-ups and build a steady routine with changing exercises.</p></article>
+            </div>
         </div>
     </section>
-    <section class="section-block shell" id="legal" aria-labelledby="legal-title">
-        <div class="section-intro"><h2 id="legal-title">Legal texts</h2></div>
-        <div class="card-grid">
-            <article class="card"><h3>European Union</h3><p><a class="card-link" href="../eu/datenschutz/index.html">Privacy Policy</a><br /><a class="card-link" href="../eu/nutzungsbedingungen/index.html">Terms of Use</a><br /><a class="card-link" href="copyright/index.html">Copyright</a></p></article>
+
+    <section class="shell section stack" aria-labelledby="more-title">
+        <h2 class="h2 narrow" id="more-title">What else Canu can do.</h2>
+        <div class="facts">
+                <div class="fact"><h3>Results that help</h3><p>After each exercise, see what improved and which passage to practise next.</p></div>
+                <div class="fact"><h3>Custom exercises</h3><p>Build scales and note sequences, choose notes and tempo, and save them. Canu Boogie comes as a ready-made example to change.</p></div>
+                <div class="fact"><h3>Your week</h3><p>Your practice week on a staff, with practice minutes per day.</p></div>
+                <div class="fact"><h3>Exercises by goal</h3><p>Intonation, ear training, agility, articulation, breath control and more.</p></div>
+                <div class="fact"><h3>Adjustable tempo</h3><p>Change the BPM to slow down a difficult exercise or raise the tempo step by step.</p></div>
+                <div class="fact"><h3>Light or dark</h3><p>Choose the appearance that suits you, or let it switch automatically.</p></div>
         </div>
+    </section>
+
+    <section class="band" aria-labelledby="shots-title">
+        <div class="shell section stack">
+            <h2 class="h2 narrow" id="shots-title">This is practising with Canu.</h2>
+            <div class="shots">
+            <img src="../assets/shots/canu-en-1.jpg" alt="Canu screenshot 1" width="598" height="1300" loading="lazy" />
+            <img src="../assets/shots/canu-en-2.jpg" alt="Canu screenshot 2" width="598" height="1300" loading="lazy" />
+            <img src="../assets/shots/canu-en-3.jpg" alt="Canu screenshot 3" width="598" height="1300" loading="lazy" />
+            <img src="../assets/shots/canu-en-4.jpg" alt="Canu screenshot 4" width="598" height="1300" loading="lazy" />
+            </div>
+        </div>
+    </section>
+
+    <section class="shell section" aria-labelledby="pro-title">
+        <div class="pro">
+            <div class="pro-copy">
+                <h2 class="h2" id="pro-title">More with Canu Pro</h2>
+                <p>Your voice develops through practice.</p>
+            </div>
+            <ul class="pro-list"><li>77 additional exercises</li><li>Unlimited daily sessions</li><li>Practise custom exercises with live feedback</li><li>Hear your voice live</li><li>Listen to, compare, save and share recordings</li></ul>
+        </div>
+    </section>
+
+    <section class="band" id="support" aria-labelledby="support-title">
+        <div class="shell section two-col">
+            <div>
+                <h2 class="h2" id="support-title">Quick help for Canu</h2>
+                <p>Briefly describe your request. We reply as soon as possible and use your details only to handle your request.</p>
+                <p class="hint">So we can help: please include device, iOS version, app version and a short description of the problem. A screenshot often helps.</p>
+            </div>
+            <div>
+                <a class="mail-card" href="mailto:support@canusing.com?subject=Canu%20Support"><strong>Technical help</strong>For problems with audio, exercises, purchases or settings.<em>support@canusing.com</em></a>
+                <a class="mail-card" href="mailto:feedback@canusing.com?subject=Canu%20Feedback"><strong>Ideas and feedback</strong>Send us wishes, suggestions or feedback.<em>feedback@canusing.com</em></a>
+            </div>
+        </div>
+        <div class="shell faq-block" aria-labelledby="faq-title">
+            <h3 class="h2-small" id="faq-title">Common questions</h3>
+            <div class="faq-list">
+                <details class="faq"><summary>Canu does not detect my voice.</summary><p>Canu needs access to the microphone. Allow it in iPhone Settings under Canu. Practise in a quiet room and keep the microphone clear.</p></details>
+                <details class="faq"><summary>What happens to my recordings?</summary><p>Canu only records when you switch recording on. Recordings stay on your device, and you can delete them in the app. Listening, comparing, saving and sharing are part of Canu Pro.</p></details>
+                <details class="faq"><summary>How do I restore my subscription?</summary><p>Purchases run through your Apple ID. On the Pro screen in Canu, tap “Restore subscription”. You manage and cancel the subscription in your Apple ID settings.</p></details>
+                <details class="faq"><summary>Which data does Canu share?</summary><p>Only with your consent: usage data goes to Google Analytics, error reports to Firebase Crashlytics. You switch each off separately in Canu's settings, with “Share usage data” and “Share error reports”. Audio is not transmitted.</p></details>
+            </div>
+        </div>
+    </section>
+
+    <span class="anchor" id="rechtliches"></span>
+    <section class="shell section legal" id="legal" aria-labelledby="legal-title">
+        <div class="legal-intro">
+            <h2 class="h2-small" id="legal-title">Legal texts</h2>
+            <p>Choose the region where you use Canu.</p>
+        </div>
+        <ul class="legal-list">
+            <li><strong>Switzerland</strong><span><a href="../ch/datenschutz/index.html">Privacy policy</a><a href="../ch/nutzungsbedingungen/index.html">Terms of use</a><a href="../international/copyright/index.html">Copyright</a></span></li>
+            <li><strong>European Union and EEA</strong><span><a href="../eu/datenschutz/index.html">Privacy policy</a><a href="../eu/nutzungsbedingungen/index.html">Terms of use</a><a href="../international/copyright/index.html">Copyright</a></span></li>
+            <li><strong>United States</strong><span><a href="../us/privacy/index.html">Privacy policy</a><a href="../us/terms/index.html">Terms of use</a><a href="../international/copyright/index.html">Copyright</a></span></li>
+            <li><strong>Mainland China</strong><span><a href="../cn/privacy/index.html">Privacy policy</a><a href="../cn/terms/index.html">Terms of use</a><a href="../cn/copyright/index.html">Copyright</a></span></li>
+            <li><strong>Other regions</strong><span><a href="../international/privacy/index.html">Privacy policy</a><a href="../international/terms/index.html">Terms of use</a><a href="../international/copyright/index.html">Copyright</a></span></li>
+        </ul>
     </section>
 </main>
-<footer class="site-footer"><div class="footer-inner shell"><p>© 2026 Aleksander Woichansky. All rights reserved.</p><div class="footer-links"><a href="mailto:support@canusing.com">Contact</a><a href="#legal">Legal texts</a></div></div></footer>
+
+<footer class="site-footer">
+    <div class="footer-inner shell">
+        <div class="footer-main">
+            <a class="brand" href="index.html"><img src="../assets/canu-logo.png" alt="" width="40" height="40" />Canu</a>
+            <p>© 2026 Aleksander Woichansky. All rights reserved.</p>
+            <div class="footer-links"><a href="mailto:support@canusing.com">Contact</a><a href="#legal">Legal texts</a></div>
+        </div>
+        <a class="sibling" hidden data-am-live href="../autometronom/en/index.html"><img src="../autometronom/assets/autometronom-icon.png" alt="" width="64" height="64" /><span><small>Also from us</small><strong>AutoMetronom</strong>The metronome that listens first.</span></a>
+    </div>
+</footer>
 </body>
 </html>
