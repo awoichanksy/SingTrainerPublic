@@ -13,12 +13,13 @@ import canu_strings
 
 ROOT = Path(__file__).resolve().parent.parent
 CANU_STORE = "https://apps.apple.com/us/app/canu-sing/id6797062240"
-AM_STORE = None  # optional fixed App Store URL; without it assets/store.js shows the button once Apple lists the app
+# Written by _build/check_release.py (daily GitHub Action) once Apple lists AutoMetronom.
+# With a URL the pages get a fixed App Store button and are opened to search engines.
+_AM_STORE_FILE = Path(__file__).resolve().parent / "am_store_url.txt"
+AM_STORE = _AM_STORE_FILE.read_text(encoding="utf-8").strip() if _AM_STORE_FILE.exists() else None
 LANGS = ["de", "en", "es", "fr", "it", "nl", "pt", "ru", "sv"]
 NAMES = canu_strings.NAMES
 ROBOTS = '    <meta name="robots" content="noindex, nofollow" />\n'
-FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com" />\n'
-         '    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />')
 
 # (folder, text language, html lang) – /international/ and /us/ are English hubs, /cn/ is Chinese.
 CANU_PAGES = [(c, c, c) for c in LANGS] + [("international", "en", "en"), ("us", "en", "en-US"), ("cn", "zh", "zh-Hans")]
@@ -34,8 +35,7 @@ def head(t, lang, icon, css, index=True):
     <title>{t["title"]}</title>
     <meta name="description" content="{t["desc"]}" />
     <link rel="icon" type="image/png" href="{icon}" />
-    {FONTS}
-    <link rel="stylesheet" href="{css}?v=2" />
+    <link rel="stylesheet" href="{css}?v=3" />
     <script src="{css.replace("styles.css", "assets/store.js")}" defer></script>
 </head>
 <body>
